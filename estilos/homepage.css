@@ -11,23 +11,17 @@
 }
 
 .nav {
-    list-style: none;
     margin: 0px;
-    padding: 0px;
+    padding: 10px;
     background: rgb(185, 224, 233);
     font-size: 25px;
 }
 
-.nav li {
-    display: inline-block;
+.nav a{
+    padding: 10px;
 }
 
-.nav li a {
-    display: inline-block;
-    padding: 10px 20px;
-} 
-
-.nav li a:hover {
+.nav a:hover {
     background: #90DEF0;
 }
 
