@@ -10,10 +10,6 @@
     color: black;
 }
 
-.informacion {
-    text-align: center;
-}
-
 .nav {
     margin: 0px;
     padding: 10px;
@@ -29,55 +25,78 @@
     background: #90DEF0;
 }
 
-.subtitulo {
+.productos {
     font-size: 20px;
-    text-align: center;
+}
+
+.motherboards {
+    padding: 0px 0px 20px;
+}
+
+.procesadores {
+    padding: 0px 0px 20px;
+}
+
+.memorias {
+    padding: 0px 0px 20px;
+}
+
+.placas {
+    padding: 0px 0px 20px;
+}
+
+.almacenamiento {
+    padding: 0px 0px 20px;
+}
+.fuentes {
+    padding: 0px 0px 20px;
+}
+
+.gabinetes {
+    padding: 0px 0px 20px;
+}
+
+.vertical {
+    border-left: 1px solid black;
+    height: 1100px;
+    position: absolute;
+    left: 300px;
+    margin-left: 1px;
+    top: 216px;
 }
 
 img {
-    width: 350px;
+    width: 250px;
 }
 
-.mother {
-    width: 350px;
-    padding: 0px 50px;
-    border: solid #D76900;
+.subtitulo {
     position: absolute;
-    left: 80px;
+    left: 500px;
+    bottom: 320px;
 }
 
-
-.CPU {
-    width: 350px;
-    padding: 0px 50px;
-    border: solid #D76900;
+.mother1 {
     position: absolute;
-    left: 800px;
-    top: 350px;
+    left: 500px;
+    bottom: 10px;
 }
 
-.ram {
-    width: 350px;
-    padding: 0px 50px;
-    border: solid #D76900;
+.mother2 {
     position: absolute;
-    left: 73px;
-    top: 830px;
+    left: 500px;
+    top: 630px;
 }
 
-.GPU {
-    width: 350px;
-    padding: 0px 50px;
-    border: solid #D76900;
+.mother3 {
     position: absolute;
-    left: 800px;
-    top: 830px;
+    left: 500px;
+    top: 980px;
 }
 
 .contacto {
     background: #D76900;
     position: relative;
-    top: 1000px;
+    top: 800px;
 }
 
 .contacto p {
