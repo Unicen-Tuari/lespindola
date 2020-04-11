@@ -5,13 +5,10 @@
     padding: 5px;
 }
 
-.titulo a {
-    text-decoration: none;
-    color: black;
-}
 
 .informacion {
     text-align: center;
+    font-size: 20px;
 }
 
 .nav {
@@ -38,46 +35,45 @@ img {
     width: 350px;
 }
 
-.mother {
-    width: 350px;
-    padding: 0px 50px;
+.caja1 div {
+    width: 500px;
     border: solid #D76900;
-    position: absolute;
-    left: 80px;
+    padding: 10px;
+    margin: 40px 30px;
+    float: left;
+    margin-left: 70px;
 }
 
-
-.CPU {
-    width: 350px;
-    padding: 0px 50px;
-    border: solid #D76900;
-    position: absolute;
-    left: 800px;
-    top: 350px;
+.caja1 div img {
+    margin-left: 50px;
 }
 
-.ram {
-    width: 350px;
-    padding: 0px 50px;
-    border: solid #D76900;
-    position: absolute;
-    left: 73px;
-    top: 830px;
+.caja1 div p {
+    text-align: center;
 }
 
-.GPU {
-    width: 350px;
-    padding: 0px 50px;
+.caja2 div {
+    width: 500px;
     border: solid #D76900;
-    position: absolute;
-    left: 800px;
-    top: 830px;
+    padding: 10px;
+    margin: 40px 30px;
+    float: left;
+    margin-left: 70px;
+}
+
+.caja2 div img {
+    margin-left: 50px;
+}
+
+.caja2 div p {
+    text-align: center;
 }
 
 .contacto {
     background: #D76900;
-    position: relative;
-    top: 1000px;
+    position: absolute;
+    top: 1350px;
+    width: 100%;
 }
 
 .contacto p {
