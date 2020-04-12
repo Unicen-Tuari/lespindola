@@ -26,34 +26,20 @@
 }
 
 .productos {
+    float: left;
+    padding: 10px 10px;
     font-size: 20px;
+    width: 400px;
+    height: 1000px;
 }
 
-.motherboards {
-    padding: 0px 0px 20px;
+.productos ul li a {
+    text-decoration: none;
 }
 
-.procesadores {
-    padding: 0px 0px 20px;
-}
-
-.memorias {
-    padding: 0px 0px 20px;
-}
-
-.placas {
-    padding: 0px 0px 20px;
-}
-
-.almacenamiento {
-    padding: 0px 0px 20px;
-}
-.fuentes {
-    padding: 0px 0px 20px;
-}
-
-.gabinetes {
-    padding: 0px 0px 20px;
+.productos ul li {
+    padding: 30px;
+    list-style: none;
 }
 
 .vertical {
@@ -66,7 +52,7 @@
 }
 
 img {
-    width: 250px;
+    width: 150px;
 }
 
 .subtitulo {
@@ -78,7 +64,7 @@ img {
 .gpu1 {
     position: absolute;
     left: 500px;
-    bottom: 10px;
+    bottom: 40px;
 }
 
 .gpu2 {
@@ -90,19 +76,30 @@ img {
 .gpu3 {
     position: absolute;
     left: 500px;
-    top: 980px;
+    top: 1000px;
+}
+
+.GPUS a {
+    background:blue;
+    color: white;
+    padding: 5px;
+    position: absolute;
+    top: 270px;
+    text-decoration: none;
 }
 
 .contacto {
+    position: absolute;
+    top: 1400px;
+    width: 100%;
     background: #D76900;
-    position: relative;
-    top: 800px;
 }
 
 .contacto p {
     text-align: center;
     font-size: 30px;
 }
+
 
 .contacto img {
     width: 50px;
