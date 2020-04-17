@@ -8,6 +8,7 @@
     width: 18%;
     border: solid #A1BB88;
     border-radius: 10px;
+    margin-top: 3%;
 }
 
 .productos a {
@@ -17,28 +18,29 @@
 
 .productos li {
     list-style: none;
-    padding: 20% 0%;
-    font-size: 20px;
+    padding: 10% 0%;
+    font-size: 125%;
 }
 
 .subtitulo {
     text-align: center;
-    font-size: 20px;
+    font-size: 125%;
 }
 
 .venta {
-    width: 50%;
+    width: 45%;
     border: solid #A1BB88;
     border-radius: 10px;
-    margin: 20px;
+    margin: 3%;
     margin-left: 30%;
+    padding: 1%;
 }
 
 .venta img {
-    width: 300px;
-    margin-left: 150px;
+    width: 45%;
+    margin-left: 25%;
 }
 
 .venta p {
-    margin-left: 20px;
+    margin-left: 4%;
 }
