@@ -17,6 +17,7 @@
 .nav {
     background: #A1BB88;
     padding: 1%;
+    border-radius: 10px;
 }
 
 .nav li {
@@ -103,6 +104,7 @@
     margin: 3%;
     margin-left: 30%;
     padding: 1%;
+    border-radius: 10px;
 }
 
 .venta img {
@@ -180,5 +182,6 @@
     border-radius: 10px;
     padding: 0.5%;
     border: 2px solid #417213;
+    margin-bottom: 1%;
 }
 
