@@ -1,0 +1,184 @@
+/*Homepage style*/
+
+.titulo {
+    background-color: #417213;
+    padding: 0.5%;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 350%;
+    margin-bottom: 1%;
+}
+
+.informacion {
+    text-align: center;
+    font-size: 150%;
+}
+
+.nav {
+    background: #A1BB88;
+    padding: 1%;
+}
+
+.nav li {
+    list-style: none;
+    display: inline;
+    padding: 0% 2.5%;
+    font-size: 130%;
+}
+
+.nav a {
+    color: black;
+    text-decoration: none;
+}
+
+.subtitulo {
+    text-align: center;
+}
+
+.producto {
+    width: 35%;
+    float: left;
+    margin: 1%;
+    margin-left: 10%;
+    border: solid #A1BB88;
+}
+
+.producto h3 {
+    text-align: center;
+}
+
+.producto img {
+    width: 60%;
+    margin-left: 20%;
+}
+
+.contactos {
+    clear: both;
+    text-align: center;
+    background: #A1BB88;
+    font-size: 150%;
+}
+
+.contactos img {
+    width: 3%;
+    margin-left: 4%;
+}
+
+/*Style products*/
+
+.titulo a {
+    text-decoration: none;
+    color: black;
+}
+
+.productos {
+    float: left;
+    width: 18%;
+    border: solid #A1BB88;
+    border-radius: 10px;
+    margin-top: 3%;
+}
+
+.productos a {
+    text-decoration: none;
+    color: black;
+}
+
+.productos li {
+    list-style: none;
+    padding: 10% 0%;
+    font-size: 125%;
+}
+
+.subtituloProd {
+    text-align: center;
+    margin-right: 20%;  
+    font-size: 125%;
+}
+
+.venta {
+    width: 45%;
+    border: solid #A1BB88;
+    border-radius: 10px;
+    margin: 3%;
+    margin-left: 30%;
+    padding: 1%;
+}
+
+.venta img {
+    width: 45%;
+    margin-left: 25%;
+}
+
+.venta p {
+    text-align: center;
+}
+
+.venta table,td,tr {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 1%;
+    margin: 0 auto;
+    width: 55%;
+    margin-bottom: 2%;
+}
+
+.venta th {
+    background: #A1BB88;
+}
+
+.venta a {
+    margin-left: 40%;
+    background: blue;
+    padding: 1%;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+/*Sales style*/
+
+.cuarentena {
+    width: 71%;
+    background: #f2dede;
+    color: #a94442;
+    padding: 0.1%;
+    border-radius: 10px;
+    margin-bottom: 1%;
+    border: 2px solid red;
+}
+
+.manera_de_envio {
+    width: 60%;
+    background: #A1BB88;
+    border-radius: 10px;
+    padding: 0.5%;
+    margin-bottom: 1%;
+    border: 2px solid #417213;
+}
+
+.retiro {
+    font-weight: bold;
+}
+
+.cliente {
+    width: 65%;
+    background: #A1BB88;
+    border-radius: 10px;
+    padding: 0.5%;
+    margin-bottom: 1%;
+    border: 2px solid #417213;
+}
+
+.cliente input {
+    margin-bottom: 1%;
+}
+
+.contacto {
+    width: 50%;
+    background: #A1BB88;
+    border-radius: 10px;
+    padding: 0.5%;
+    border: 2px solid #417213;
+}
+
