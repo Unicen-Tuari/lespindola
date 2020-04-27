@@ -14,6 +14,33 @@
     font-size: 150%;
 }
 
+.contenedor_random {
+    width: 75%;
+    padding: 1%;
+    margin: 0 auto;
+    border: solid #A1BB88;
+    border-radius: 10px;
+    margin-bottom: 1%;
+}
+
+.contenedor_random p {
+    font-size: 120%;
+    text-align: center;
+}
+
+.contenedor_random button {
+    margin-left: 45%;
+    margin-bottom: 1%;
+    padding: 1%;
+    font-size: 100%;
+}
+
+.contenedor_random > .aleatorio {
+    font-size: 120%;
+    text-align: center;
+}
+
+
 .nav {
     background: #A1BB88;
     padding: 1%;
