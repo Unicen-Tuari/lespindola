@@ -69,6 +69,7 @@
     margin: 1%;
     margin-left: 10%;
     border: solid #A1BB88;
+    border-radius: 10px;
 }
 
 .producto h3 {
@@ -85,6 +86,7 @@
     text-align: center;
     background: #A1BB88;
     font-size: 150%;
+    border-radius: 10px;
 }
 
 .contactos img {
