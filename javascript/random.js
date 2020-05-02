@@ -1,19 +1,23 @@
 "use strict";
 
-const productos = ["Procesadores", "Almacenamiento", "Mothers",
- "Placas de Video", "Memorias RAM", "Fuentes de Poder", "Gabinetes"];
+let productos = ["Procesadores", "Almacenamiento", "Mothers",
+"Placas de Video", "Memorias RAM", "Fuentes de Poder", "Gabinetes"];
 
+let btn = document.getElementById("generar");
+btn.addEventListener("click", mostrar);
 
-const aleatorio = (max) => Math.floor(Math.random() * max);
-
-const obteneraleatorio = () => productos[aleatorio(productos.length)];
-
-const mostraraleatorio = () => {
-  document.getElementById('random').innerHTML = obteneraleatorio();
+function generarrandom(){
+    let random = Math.floor(Math.random() * productos.length);
+    return random;
 }
 
-document.getElementById('generar')
-  .addEventListener('click', mostraraleatorio);
+function productorandom(){
+    let elegido = productos[generarrandom(productos.length)];
+    return elegido;
+}
 
-mostraraleatorio();
-
+function mostrar(){
+    let mostrar = document.getElementById("random");
+    mostrar.innerHTML = productorandom();
+}
+    
