@@ -72,6 +72,11 @@
     border-radius: 10px;
 }
 
+.producto a {
+    text-decoration: none;
+    color: black;
+}
+
 .producto h3 {
     text-align: center;
 }
@@ -175,7 +180,7 @@
     color: #a94442;
     padding: 0.1%;
     border-radius: 10px;
-    margin-bottom: 1%;
+    margin-bottom: 2.5%;
     border: 2px solid red;
 }
 
@@ -184,7 +189,7 @@
     background: #A1BB88;
     border-radius: 10px;
     padding: 0.5%;
-    margin-bottom: 1%;
+    margin-bottom: 2.5%;
     border: 2px solid #417213;
 }
 
@@ -197,7 +202,7 @@
     background: #A1BB88;
     border-radius: 10px;
     padding: 0.5%;
-    margin-bottom: 1%;
+    margin-bottom: 2.5%;
     border: 2px solid #417213;
 }
 
@@ -211,6 +216,6 @@
     border-radius: 10px;
     padding: 0.5%;
     border: 2px solid #417213;
-    margin-bottom: 1%;
+    margin-bottom: 2.5%;
 }
 
