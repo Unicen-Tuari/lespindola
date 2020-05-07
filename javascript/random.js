@@ -6,8 +6,8 @@ let productos = ["Procesadores", "Almacenamiento", "Mothers",
 let btn = document.getElementById("generar");
 btn.addEventListener("click", mostrar);
 
-function generarrandom(){
-    let random = Math.floor(Math.random() * productos.length);
+function generarrandom(max){
+    let random = Math.floor(Math.random() * max);
     return random;
 }
 
