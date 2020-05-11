@@ -175,6 +175,7 @@
 /*Sales style*/
 
 .cuarentena {
+    margin: 0 auto;
     width: 71%;
     background: #f2dede;
     color: #a94442;
@@ -185,6 +186,7 @@
 }
 
 .manera_de_envio {
+    margin: 0 auto;
     width: 60%;
     background: #A1BB88;
     border-radius: 10px;
@@ -194,11 +196,13 @@
 }
 
 .retiro {
+    margin: 0 auto;
     font-weight: bold;
 }
 
 .cliente {
-    width: 65%;
+    margin: 0 auto;
+    width: 70%;
     background: #A1BB88;
     border-radius: 10px;
     padding: 0.5%;
@@ -207,10 +211,12 @@
 }
 
 .cliente input {
+    margin: 0 auto;
     margin-bottom: 1%;
 }
 
 .contacto {
+    margin: 0 auto;
     width: 50%;
     background: #A1BB88;
     border-radius: 10px;
@@ -219,3 +225,6 @@
     margin-bottom: 2.5%;
 }
 
+.button{
+    margin-left: 45%;
+}
