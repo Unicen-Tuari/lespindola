@@ -7,11 +7,22 @@ function getProduct(){
     return $sentence->fetchAll();
 }
 
-function createProduct($id_product, $title, $description){
+function createProduct($title, $description){
     $db = new PDO('mysql:host=localhost;dbname=hardwareSales;charset=utf8', 'root', '');
-    $sentence = $db->prepare("INSERT INTO product(id_product, title, description) VALUES(?, ?, ?"); 
-    $sentence->execute(array($id_product, $title, $description));
+    $sentence = $db->prepare("INSERT INTO product(title, description) VALUES(?, ?)"); 
+    $sentence->execute(array($title, $description));
 }
 
+function removeProduct ($id_product){
+    $db = new PDO('mysql:host=localhost;dbname=hardwareSales;charset=utf8', 'root', '');
+    $sentence = $db->prepare("DELETE FROM product WHERE id_product=?"); 
+    $sentence->execute(array($id_product));
+}
+
+function markProductAsDone ($id_product){
+    $db = new PDO('mysql:host=localhost;dbname=hardwareSales;charset=utf8', 'root', '');
+    $sentence = $db->prepare("UPDATE product SET done=1 WHERE id_product=?"); 
+    $sentence->execute(array($id_product));
+}
 
 ?>
