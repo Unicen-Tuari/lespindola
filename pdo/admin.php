@@ -127,7 +127,6 @@ function products($member = null){
 
 
 function insertProducts(){
-  echo "insert Products";
   echo "id_product: " . $_GET["id_product"];
   echo "title: " . $_GET["title"];
   echo "description: " . $_GET["description"]; 
