@@ -142,7 +142,4 @@ function complete($params){
   header ("location: ../home");
 }
 
-function showProduct($params){
-  
-}
 ?>

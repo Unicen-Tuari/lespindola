@@ -7,8 +7,7 @@ class ConfigApp{
         'home' => 'products',
         'insertProducts' => 'insertProducts',
         'deleteProduct' => 'deleteProduct',
-        'done' => 'complete',
-        'show' => 'showProduct'
+        'done' => 'complete'
     ];
 }
 ?>
