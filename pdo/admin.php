@@ -52,7 +52,7 @@ function products($member = null){
           <li class="nav-item">
             <a class="nav-link" href="#">
               <span data-feather="bar-chart-2"></span>
-              Statistics
+              Categories
             </a>
           </li>
         </ul>
@@ -100,7 +100,6 @@ function products($member = null){
           ?>
              
            <td>
-              <a href="show/<? echo $product['id_product'];?>"><span data-feather="edit"></span></a>
               <a href="done/<? echo $product['id_product'];?>"><span data-feather="check-circle"></span></a>
               <a href="deleteProduct/<? echo $product['id_product'];?>"><span data-feather="trash-2"></span></a>
             </td>
