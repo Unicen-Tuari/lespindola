@@ -83,24 +83,24 @@
             </tr>
           </thead>
           <tbody>
-            
-        <!--  <?php 
-            $products = getProduct();
-            foreach($products as $product){
-          ?>-->
           {foreach from=$products item=product}
-            <tr>
-            {'<td>'.$product['id_product'].'</td>';}
-            {'<td>'.$product['title'].'</td>';}
-            {'<td>'.$product['description'].'</td>';}
-            {'<td>'.$product['done'].'</td>';} 
-          
-             
-           <td>
+            <td>
+            {$product['id_product']}
+            </td>
+            <td>
+            {$product['title']}
+            </td>
+            <td>
+            {$product['description']}
+            </td>
+            <td>
+            {$product['done']} 
+            </td>
+
+            <td>
               <a href="done/{$product['id_product']}"><span data-feather="check-circle"></span></a>
               <a href="deleteProduct/{$product['id_product']}"><span data-feather="trash-2"></span></a>
             </td>
-            </tr>
           </tbody> 
           {/foreach}  
         </table>
@@ -108,7 +108,7 @@
   </div>
 </div>
     <script src="https://unpkg.com/feather-icons"></script>
-    <script src="../javascript/admin.js"></script>
+    <script src="../../javascript/admin.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>

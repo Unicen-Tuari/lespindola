@@ -6,6 +6,7 @@ function products($member = null){
   $smarty = new Smarty();
   $smarty->assign('products',$products);
   $smarty->display('templates/index.tpl');
+}
 
 
 function insertProducts(){
