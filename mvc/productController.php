@@ -18,6 +18,11 @@ class productController{
         $this->view->showProduct($product);
     }
 
+    function products(){
+        $products = $this->model->getProducts();
+        $this->view->products($products);
+    }
+
     function insertProduct(){
         $this->model->createProduct($_GET["title"], $_GET["description"]); 
         header ("Location: ../home");
