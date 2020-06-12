@@ -32,6 +32,8 @@ if(array_key_exists($actionName, ConfigApp::$ACTIONS)){
         echo $controller->$methodName();
     }
 }else{
+    $controller = new $controllerMetodo[0];
+    $methodName = $controllerMetodo[1];
     echo $controller->products();
 }
 
