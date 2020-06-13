@@ -10,7 +10,7 @@
             </tr>
           </thead>
           <tbody>
-          {foreach from=$products item=product} 
+          {foreach from=$products item=product}
             <td>
             {$product['id_product']}
             </td>
