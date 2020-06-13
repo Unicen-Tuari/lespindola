@@ -5,8 +5,8 @@ class ConfigApp{
     public static $PARAMS = "params";
     public static $ACTIONS = [
         'home' => 'products',
-        'insertProducts' => 'insertProducts',
-        'deleteProduct' => 'deleteProduct',
+        'insert' => 'insertProducts',
+        'delete' => 'deleteProduct',
         'done' => 'complete'
     ];
 }
