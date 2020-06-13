@@ -1,6 +1,7 @@
 <?php
 require_once ('database.php');
 require_once ('libs/Smarty.class.php');
+
 function products($member = null){
   $products = getProduct();
   $smarty = new Smarty();

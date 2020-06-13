@@ -83,7 +83,7 @@
             </tr>
           </thead>
           <tbody>
-          {foreach from=$products item=product}
+          {foreach from=$products item=product} 
             <td>
             {$product['id_product']}
             </td>
@@ -96,7 +96,6 @@
             <td>
             {$product['done']} 
             </td>
-
             <td>
               <a href="done/{$product['id_product']}"><span data-feather="check-circle"></span></a>
               <a href="deleteProduct/{$product['id_product']}"><span data-feather="trash-2"></span></a>
