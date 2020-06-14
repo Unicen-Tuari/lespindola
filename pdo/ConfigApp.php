@@ -9,7 +9,16 @@ class ConfigApp{
         'delete' => 'deleteProduct',
         'done' => 'complete',
         'categories' => 'viewCategories',
-        'homePage' => 'VentaDeHardware'
+        'homePage' => 'VentaDeHardware',
+        'cpu' => 'viewCPU',
+        'gpu' => 'viewGPU',
+        'cabinets' => 'viewCabinets',
+        'discs' => 'viewDiscs',
+        'sources' => 'viewSources',
+        'memories' => 'viewMemories',
+        'mother' => 'viewMother',
+        'sale' => 'viewSale',
+        'index' => 'VentaDeHardware'
     ];
 }
 ?>
