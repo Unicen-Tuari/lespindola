@@ -9,9 +9,8 @@ function products($member = null){
   $smarty->display('templates/index.tpl');
 }
 
-
 function insertProducts(){
-  createProduct($_GET["title"], $_GET["description"]); 
+  createProduct($_GET["title"], $_GET["category"], $_GET["description"]); 
   header ("location: home");
 }
 
@@ -23,6 +22,13 @@ function deleteProduct($params){
 function complete($params){
   markProductAsDone($params[0]);
   header ("location: ../home");
+}
+
+function viewCategories($member = null){
+  $products = getProduct();
+  $smarty = new Smarty();
+  $smarty->assign('products',$products);
+  $smarty->display('templates/categories.tpl');
 }
 
 ?>

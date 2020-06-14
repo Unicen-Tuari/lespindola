@@ -9,7 +9,7 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <!-- Favicons -->
-<link rel="icon" href="images/admin.jpeg">
+<link rel="icon" href="../../images/admin.jpeg">
 <meta name="msapplication-config" content="/docs/4.5/assets/img/favicons/browserconfig.xml">
 <meta name="theme-color" content="#563d7c">
 
@@ -51,28 +51,9 @@
             </a>
           </li>
         </ul>
-
     </nav>
 
     <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
-      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <form action="insert" method="get">
-        <h1>Create New Product</h1>
-          <div class="form-group">
-            <label>Name Product</label>
-            <input type="text" class="form-control" name="title" id="title">
-          </div>
-          <div class="form-group">
-            <label>Category</label>
-            <input type="text" class="form-control" name="category" id="category">
-          </div>
-          <div class="form-group">
-            <label>Description</label>
-            <textarea class="form-control" id="description" name="description" rows="3"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Add New Product</button>
-        </form>
-      </div>
-
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom"></div>
       <div class="table-responsive">
       <h1>Products</h1>

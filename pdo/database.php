@@ -7,10 +7,10 @@ function getProduct(){
     return $sentence->fetchAll();
 }
 
-function createProduct($title, $description){
+function createProduct($title, $category, $description){
     $db = new PDO('mysql:host=localhost;dbname=hardwareSales;charset=utf8', 'root', '');
-    $sentence = $db->prepare("INSERT INTO product(title, description) VALUES(?, ?)"); 
-    $sentence->execute(array($title, $description));
+    $sentence = $db->prepare("INSERT INTO product(title, category, description) VALUES(?, ?, ?)"); 
+    $sentence->execute(array($title, $category, $description));
 }
 
 function removeProduct ($id_product){

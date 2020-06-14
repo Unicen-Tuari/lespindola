@@ -7,7 +7,8 @@ class ConfigApp{
         'home' => 'products',
         'insert' => 'insertProducts',
         'delete' => 'deleteProduct',
-        'done' => 'complete'
+        'done' => 'complete',
+        'categories' => 'viewCategories'
     ];
 }
 ?>

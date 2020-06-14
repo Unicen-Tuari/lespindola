@@ -4,6 +4,7 @@
             <tr>
               <th>Id_product</th>
               <th>Product</th>
+              <th>Category</th>
               <th>Description</th>
               <th>Done</th>
               <th>Actions</th>
@@ -18,6 +19,9 @@
             {$product['title']}
             </td>
             <td>
+            {$product['category']}
+            </td>
+            <td>
             {$product['description']}
             </td>
             <td>
@@ -28,7 +32,7 @@
               <a href="delete/{$product['id_product']}"><span data-feather="trash-2"></span></a>
             </td>
           </tbody> 
-          {/foreach}  
+          {/foreach}
         </table>
     </main>
   </div>
