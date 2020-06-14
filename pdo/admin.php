@@ -31,5 +31,12 @@ function viewCategories($member = null){
   $smarty->display('templates/categories.tpl');
 }
 
+function VentaDeHardware($member = null){
+  $products = getProduct();
+  $smarty = new Smarty();
+  $smarty->assign('products',$products);
+  $smarty->display('templates/homePage.tpl');
+}
+
 ?>
 

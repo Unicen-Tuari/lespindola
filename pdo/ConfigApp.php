@@ -8,7 +8,8 @@ class ConfigApp{
         'insert' => 'insertProducts',
         'delete' => 'deleteProduct',
         'done' => 'complete',
-        'categories' => 'viewCategories'
+        'categories' => 'viewCategories',
+        'homePage' => 'VentaDeHardware'
     ];
 }
 ?>
