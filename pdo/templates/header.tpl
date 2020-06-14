@@ -51,7 +51,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="homePage">
+            <a class="nav-link" target="blank" href="homePage">
               <span data-feather="home"></span>
               Hardware Sales  
             </a>

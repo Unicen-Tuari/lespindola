@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Venta de Hardware</title>
-    <link rel="shortcut icon" type="image/x-icon" href="images/icon.jpg">
+    <link rel="shortcut icon" type="image/x-icon" href="../images/icon.jpg">
     <link rel="stylesheet" href="../styles/mainStyle.css">
 </head>
 <body>
@@ -146,6 +146,34 @@
             </table>
             <a target="blank" href="sale">COMPRAR</a>
     </div>
+
+    {foreach from=$products item=product}
+    {if $product['category'] eq "Discs"}
+    <div class="venta">
+        <img src="#" alt="Imagen no encontrada">
+        <p>
+            {$product['title']}
+        </p>
+        <table class="table table-striped table-sm">
+            <thead>
+              <tr>
+                <th>Id_product</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+             <td>
+              {$product['id_product']}
+              </td>
+              <td>
+              {$product['description']}
+              </td>
+            </tbody> 
+          </table>
+            <a target="blank" href="sale">COMPRAR</a>
+    </div>
+    {/if}
+    {/foreach}
     
     <div class="contactos">
         <p>Para consultas, no dudes en comunicarte</p>

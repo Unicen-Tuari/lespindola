@@ -9,7 +9,7 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <!-- Favicons -->
-<link rel="icon" href="../../images/admin.jpeg">
+<link rel="icon" href="../images/admin.jpeg">
 <meta name="msapplication-config" content="/docs/4.5/assets/img/favicons/browserconfig.xml">
 <meta name="theme-color" content="#563d7c">
 
@@ -48,6 +48,12 @@
             <a class="nav-link" href="categories">
               <span data-feather="bar-chart-2"></span>
               Categories
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" target="blank" href="homePage">
+              <span data-feather="home"></span>
+              Hardware Sales  
             </a>
           </li>
         </ul>
