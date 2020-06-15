@@ -219,10 +219,10 @@
             </thead>
             <tbody>
              <td>
-              {$product['id_product']}
+              {$product['id_product']|capitalize}
               </td>
               <td>
-              {$product['description']}
+              {$product['description']|capitalize}
               </td>
             </tbody> 
           </table>

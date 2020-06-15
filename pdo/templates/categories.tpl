@@ -11,10 +11,10 @@
                 {foreach from=$products item=product}
                 {if $product['category'] eq "Mother"}
             <td>
-                {$product['title']}
+                {$product['title']|capitalize}
             </td>
             <td>
-                {$product['description']}
+                {$product['description']|capitalize}
             </td>
         </tbody> 
             {/if}
@@ -32,10 +32,10 @@
                 {foreach from=$products item=product}
                 {if $product['category'] eq "Processors"}
             <td>
-                {$product['title']}
+                {$product['title']|capitalize}
             </td>
             <td>
-                {$product['description']}
+                {$product['description']|capitalize}
             </td>
         </tbody> 
             {/if}
@@ -53,10 +53,10 @@
                 {foreach from=$products item=product}
                 {if $product['category'] eq "Cabinets"}
             <td>
-                {$product['title']}
+                {$product['title']|capitalize}
             </td>
             <td>
-                {$product['description']}
+                {$product['description']|capitalize}
             </td>
         </tbody> 
             {/if}
@@ -74,10 +74,10 @@
                 {foreach from=$products item=product}
                 {if $product['category'] eq "Discs"}
             <td>
-                {$product['title']}
+                {$product['title']|capitalize}
             </td>
             <td>
-                {$product['description']}
+                {$product['description']|capitalize}
             </td>
         </tbody> 
             {/if}
@@ -95,10 +95,10 @@
                 {foreach from=$products item=product}
                 {if $product['category'] eq "Graphics Cards"}
             <td>
-                {$product['title']}
+                {$product['title']|capitalize}
             </td>
             <td>
-                {$product['description']}
+                {$product['description']|capitalize}
             </td>
         </tbody> 
             {/if}
@@ -116,10 +116,10 @@
                 {foreach from=$products item=product}
                 {if $product['category'] eq "Memory"}
             <td>
-                {$product['title']}
+                {$product['title']|capitalize}
             </td>
             <td>
-                {$product['description']}
+                {$product['description']|capitalize}
             </td>
         </tbody> 
             {/if}

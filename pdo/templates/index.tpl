@@ -16,10 +16,10 @@
             {$product['id_product']}
             </td>
             <td>
-            {$product['title']}
+            {$product['title']|capitalize}
             </td>
             <td>
-            {$product['category']}
+            {$product['category']|capitalize}
             </td>
             <td>
             {$product['description']}
