@@ -186,7 +186,7 @@
     {foreach from=$products item=product}
     {if $product['category'] eq "Memory"}
     <div class="venta">
-        <img src="#" alt="Imagen no encontrada">
+        <img src="../images/imagen-fija.png" alt="Imagen no encontrada">
         <p>
             {$product['title']}
         </p>
