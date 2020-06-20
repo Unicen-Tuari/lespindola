@@ -19,7 +19,7 @@
             {$product['title']|capitalize}
             </td>
             <td>
-            {$product['category']|capitalize}
+            {$categories[$product['fk_category']-1]['name']|capitalize}
             </td>
             <td>
             {$product['description']}

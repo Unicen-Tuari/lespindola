@@ -32,13 +32,9 @@
 
      <div class="nav">
         <nav>
-            <li><a href="cpu">Procesadores</a></li>
-            <li><a href="discs">Almacenamiento</a></li>
-            <li><a href="mother">Mothers</a></li>
-            <li><a href="gpu">Placas de Video</a></li>
-            <li><a href="memories">Memorias RAM</a></li>
-            <li><a href="sources">Fuentes de Poder</a></li>
-            <li><a href="cabinets">Gabinetes</a></li>
+            {foreach from=$categories item=category}
+            <li><a href="category/{$category['id_category']}">{$category['name']}</a></li>
+            {/foreach}
         </nav>
     </div>
 

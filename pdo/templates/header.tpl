@@ -70,7 +70,11 @@
           </div>
           <div class="form-group">
             <label>Category</label>
-            <input type="text" class="form-control" name="category" id="category">
+            <select id="category" name="category">
+              {foreach from=$categories item=category}
+              <option value="{{$category['id_category']}}">{{$category['name']}}</option>
+              {/foreach}
+            </select>
           </div>
           <div class="form-group">
             <label>Description</label>

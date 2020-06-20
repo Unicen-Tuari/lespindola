@@ -1,5 +1,7 @@
 <?php
 
+define('BASE_URL','//'.$_SERVER['SERVER_NAME'] . ':' .$_SERVER['SERVER_PORT'] . dirname($_SERVER['PHP_SELF']) . '/');
+
 class ConfigApp{
     public static $ACTION = "action";
     public static $PARAMS = "params";
@@ -10,15 +12,9 @@ class ConfigApp{
         'done' => 'complete',
         'categories' => 'viewCategories',
         'homePage' => 'VentaDeHardware',
-        'cpu' => 'viewCPU',
-        'gpu' => 'viewGPU',
-        'cabinets' => 'viewCabinets',
-        'discs' => 'viewDiscs',
-        'sources' => 'viewSources',
-        'memories' => 'viewMemories',
-        'mother' => 'viewMother',
         'sale' => 'viewSale',
-        'index' => 'VentaDeHardware'
+        'index' => 'VentaDeHardware',
+        'category' => 'viewProducts'
     ];
 }
 ?>
