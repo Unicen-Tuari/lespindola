@@ -44,25 +44,12 @@
         <h2>Algunos de nuestros productos</h2>
     </div>
     
-    <div class="producto"><a href="mother.html#homepage">
-        <h3>Mother Gigabyte B450M-S2H AM4 M.2 Gen3 x4</h3>
-        <img src="../images/mothers/Gigabyte B450M.jpg" alt="Foto de Mother B450M-S2H"></a>
+    {foreach from=$products item=product}
+    <div class="producto">
+        <h3>{$product['title']}</h3>
+        <img src="../images/imagen-fija.png" alt="Imagen no encontrada">
     </div>
-
-    <div class="producto"><a href="cpu.html#homepage">
-        <h3>Procesador AMD RYZEN 5 3600 4.2GHz AM4</h3>
-        <img src="../images/CPU/AMD RYZEN 5 3600X 4.4GHz.jpg" alt="Foto de CPU Ryzen 5"></a>
-    </div>
-
-    <div class="producto"><a href="memories.html#homepage">
-        <h3>Memoria DDR4 16GB 2666MHz T-Force</h3>
-        <img src="../images/rams/DDR4 16GB 2666MHz.jpg" alt="Foto de DDR4 16GB"></a>
-    </div>
-
-    <div class="producto"><a href="gpu.html#homepage">
-        <h3>Placa de Video Asrock RX 570 4GB</h3>
-        <img src="../images/GPU/Asrock RX 570.jpg" alt="Foto de Asrock RX 570"></a>
-    </div>
+    {/foreach}
 
     <div class="contactos">
         <h4>Para consultas, no dudes en comunicarte</h4>

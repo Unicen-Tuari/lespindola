@@ -1,23 +1,26 @@
 {include file="headerCategories.tpl"}
-    <table class="table table-striped table-sm">
-        <thead>
+<table class="table table-striped table-sm">
+          <thead>
             <tr>
-                <th>Product</th>
-                <th>Description</th>
+              <th>Id_category</th>
+              <th>Category</th>
+              <th>Actions</th>
             </tr>
-        </thead>
-        <tbody>
-            {foreach from=$products item=product}
-            {foreach from=$categories item=category}
-            <h2><a href="category/{$category['id_category']}">{$category['name']}</a></h2>
-            {/foreach}
+          </thead>
+          <tbody>
+          {foreach from=$categories item=category}
             <td>
-                {$product['title']|capitalize}
+            {$category['id_category']}
             </td>
             <td>
-                {$product['description']|capitalize}
+            {$category['name']|capitalize}
             </td>
-            {/foreach}
-        </tbody> 
-    </table>
-{include file="footer.tpl"}
+            <td>
+              <a href="deleteCategory/{$category['id_category']}"><span data-feather="trash-2"></span></a>
+            </td>
+          </tbody> 
+          {/foreach}
+        </table>
+    </main>
+  </div>
+{include file="footerIndex.tpl"}

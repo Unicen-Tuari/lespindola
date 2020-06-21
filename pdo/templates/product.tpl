@@ -1,20 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Venta de Hardware</title>
-    <link rel="shortcut icon" type="image/x-icon" href="../images/icon.jpg">
-    <link rel="stylesheet" href="../../styles/mainStyle.css">
-    <base href="{BASE_URL}">
-</head>
-<body>
-    <div>
-        <h1 class="titulo"><a href="index">Venta de Hardware</a></h1>
-    </div>
-
-    <hr>
-
+{include file="headerProduct.tpl"}
     <div class="productos">
         <ul>
             {foreach from=$categories item=category}
@@ -52,12 +36,4 @@
             <a target="blank" href="sale">COMPRAR</a>
     </div>
     {/foreach}
-
-    <div class="contactos">
-        <p>Para consultas, no dudes en comunicarte</p>
-        <a href="https://www.facebook.com/LucaasEspindola"><img src="../images/contact/facebook.jpg"></a>
-        <a class="instagram" href="https://www.instagram.com/lucas.espindola01/?hl=es-la"><img src="../images/contact/instagram.png"></a>
-        <a class="twitter" href="https://twitter.com/EspindolaLucas1"><img src="../images/contact/twitter.png"></a>
-    </div>
-</body>
-</html>
+{include file="footerProduct.tpl"}

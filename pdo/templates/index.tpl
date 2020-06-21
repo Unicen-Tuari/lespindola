@@ -1,4 +1,4 @@
-{include file="header.tpl"}
+{include file="headerIndex.tpl"}
 <table class="table table-striped table-sm">
           <thead>
             <tr>
@@ -19,7 +19,7 @@
             {$product['title']|capitalize}
             </td>
             <td>
-            {$categories[$product['fk_category']-1]['name']|capitalize}
+            {$categories[$product['fk_category']-6]['name']|capitalize}
             </td>
             <td>
             {$product['description']}
@@ -36,4 +36,4 @@
         </table>
     </main>
   </div>
-{include file="footer.tpl"}
+{include file="footerIndex.tpl"}
