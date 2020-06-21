@@ -36,11 +36,24 @@ function createProduct($title, $category, $description){
     $sentence->execute(array($title, $category, $description));
 }
 
+function createCategory($id_category, $name){
+    $db = new PDO('mysql:host=localhost;dbname=hardwareSales;charset=utf8', 'root', '');
+    $sentence = $db->prepare("INSERT INTO category(id_category, name) VALUES(?, ?)"); 
+    $sentence->execute(array($id_category, $name));
+}
+
 function removeProduct ($id_product){
     $db = new PDO('mysql:host=localhost;dbname=hardwareSales;charset=utf8', 'root', '');
     $sentence = $db->prepare("DELETE FROM product WHERE id_product=?"); 
     $sentence->execute(array($id_product));
 }
+
+function removeCategory ($id_product){
+    $db = new PDO('mysql:host=localhost;dbname=hardwareSales;charset=utf8', 'root', '');
+    $sentence = $db->prepare("DELETE FROM category WHERE id_category=?"); 
+    $sentence->execute(array($id_product));
+}
+
 
 function markProductAsDone ($id_product){
     $db = new PDO('mysql:host=localhost;dbname=hardwareSales;charset=utf8', 'root', '');

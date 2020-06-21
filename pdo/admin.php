@@ -17,9 +17,19 @@ function insertProducts(){
   header ("location: home");
 }
 
+function insertCategory(){
+  createCategory($_GET["id_category"], $_GET["name"]); 
+  header ("location: categories");
+}
+
 function deleteProduct($params){
   removeProduct($params[0]); 
   header ("location: ../home");
+}
+
+function deleteCategory($params){
+  removeCategory($params[0]);
+  header ("location: ../categories");
 }
 
 function complete($params){
@@ -29,8 +39,10 @@ function complete($params){
 
 function viewCategories($member = null){
   $products = getProduct();
+  $categories = getCategories();
   $smarty = new Smarty();
   $smarty->assign('products',$products);
+  $smarty->assign('categories',$categories);
   $smarty->display('templates/categories.tpl');
 }
 

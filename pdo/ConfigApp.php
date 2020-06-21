@@ -14,7 +14,9 @@ class ConfigApp{
         'homePage' => 'VentaDeHardware',
         'sale' => 'viewSale',
         'index' => 'VentaDeHardware',
-        'category' => 'viewProducts'
+        'category' => 'viewProducts',
+        'insertCategory' => 'insertCategory',
+        'deleteCategory' => 'deleteCategory'
     ];
 }
 ?>
