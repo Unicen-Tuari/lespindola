@@ -3,6 +3,9 @@ require_once "ConfigApp.php";
 require_once "productView.php";
 require_once "productModel.php";
 require_once "productController.php";
+require_once "userController.php";
+require_once "userModel.php";
+require_once "userView.php";
 
 
 function parceURL($url){

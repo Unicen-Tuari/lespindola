@@ -16,7 +16,12 @@ class ConfigApp{
         'index' => 'productController#VentaDeHardware',
         'category' => 'productController#viewProducts',
         'insertCategory' => 'productController#insertCategory',
-        'deleteCategory' => 'productController#deleteCategory'
+        'deleteCategory' => 'productController#deleteCategory',
+        'login' => 'userController#login',
+        'registrarse' => 'userController#registrarse',
+        'registro' => 'userController#registro',
+        'ingresar' => 'userController#ingresar',
+        'logout' => 'userController#logout'
     ];
 }
 ?>

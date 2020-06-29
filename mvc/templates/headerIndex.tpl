@@ -24,14 +24,21 @@
       <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
       </button>
-      <ul class="navbar-nav px-3">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Lucas Nahuel Espindola
+      <!-- <ul class="navbar-nav px-3">
+        <a class="dropdown-item" href="logout" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Cerrar Sesion
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Editar Perfil</a>
-          <a class="dropdown-item" href="#">Cerrar Sesion</a>
-        </div>
+        <li class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="logout">Cerrar Sesion</a>
+        </li>
+      </ul> -->
+        <ul class="navbar-nav px-3">
+          <li class="nav-item text-nowrap">
+             <a class="nav-link" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                  aria-controls="collapseExample">
+                   <a href ='logout'class="nav-link">Cerrar Sesion</a>
+                     </a>
+        </li>
       </ul>
     </nav>
 
