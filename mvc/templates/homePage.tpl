@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,8 +10,8 @@
 <body>
     <div>
         <h1 class="titulo">Venta de Hardware</h1>
-    </div>
-
+    </div> -->
+ {include file="headerHomePage.tpl"}
     <div>
         <p class="informacion">
             En la siguiente pagina encontraras distintos productos de hardware, motherboard, CPU, almacenamiento,
@@ -50,8 +50,8 @@
         <img src="../images/imagen-fija.png" alt="Imagen no encontrada">
     </div>
     {/foreach}
-
-    <div class="contactos">
+{include file="footerProduct.tpl"}
+    <!-- <div class="contactos">
         <h4>Para consultas, no dudes en comunicarte</h4>
         <a href="https://www.facebook.com/LucaasEspindola"><img src="../images/contact/facebook.jpg"></a>
         <a href="https://www.instagram.com/lucas.espindola01/?hl=es-la"><img src="../images/contact/instagram.png"></a>
@@ -59,4 +59,4 @@
     </div>
     <script src="../javascript/random.js"></script>
 </body>
-</html>
+</html> -->
