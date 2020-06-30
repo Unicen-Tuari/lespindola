@@ -34,9 +34,9 @@
       </ul> -->
         <ul class="navbar-nav px-3">
           <li class="nav-item text-nowrap">
-             <a class="nav-link" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+             <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
                   aria-controls="collapseExample">
-                   <a href ='logout'class="nav-link">Cerrar Sesion</a>
+                    <a href ='logout'class="nav-link">Cerrar Sesion</a>
                      </a>
         </li>
       </ul>

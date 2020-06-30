@@ -23,8 +23,8 @@ class productController{
                 $_SESSION['LAST_ACTIVITY'] = time();
               }
     }
-
-    function products($member = null){
+    
+      function products($member = null){
         $products = $this->model->getProduct();
         $categories = $this->model->getCategories();
         $this->view->products($products, $categories);
