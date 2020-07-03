@@ -1,6 +1,6 @@
 {include file="headerLogin.tpl"}
     <body class="text-center">
-        <form class="form-signin" action="ingresar" method="POST">
+        <form class="form-signin" action="enter" method="POST">
             <img class="mb-4" src="../images/registrase.jpg" alt="" width="180" height="150">
             <h1 class="h3 mb-3 font-weight-normal">Ingrese</h1>
             <label for="email" class="sr-only">Email address</label>
@@ -9,7 +9,7 @@
             <input type="password" id="password" name="password" class="form-control" placeholder="Contraseña" required>
             <button class="btn btn-lg btn-primary btn-block" type="submit">Ingresar</button>
             <br>
-            <a href="registrarse"> Registrarse</a>
+            <a href="sing_in"> Registrarse</a>
             <!-- <button class="btn btn-lg btn-primary btn-block">Registrarse</button> -->
             <!-- <p class="mt-5 mb-3 text-muted">&copy; 2017-2020</p> -->
         </form>

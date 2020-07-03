@@ -15,9 +15,9 @@ class userView{
         return $this->smarty->display('templates/login.tpl');
     }
 
-    function registrarse(){
+    function sing_in(){
         $this->smarty->assign('base_url', $this->base_url);
-        return $this->smarty->display('templates/registrarse.tpl');
+        return $this->smarty->display('templates/sing_in.tpl');
     }
 }
 

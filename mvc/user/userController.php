@@ -16,11 +16,11 @@ class userController{
         return $this->view->login();
     }
 
-    function registrarse(){
-        return $this->view->registrarse();
+    function sing_in(){
+        return $this->view->sing_in();
     }
     
-    function registro(){
+    function registry(){
 
         if($_POST['email'] == ""){
             return;
@@ -34,7 +34,7 @@ class userController{
         header ("Location: login");
     }
 
-    function ingresar(){
+    function enter(){
         $email = $_POST["email"];
         $password = $_POST["password"];
         $user = $this->model->getUser($email);

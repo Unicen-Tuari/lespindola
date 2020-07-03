@@ -1,6 +1,6 @@
 {include file="headerLogin.tpl"}
     <body class="text-center">
-        <form class="form-signin" action="registro" method="POST">  
+        <form class="form-signin" action="registry" method="POST">  
             <img class="mb-4" src="../images/registrase.jpg" alt="" width="180" height="150">
             <h1 class="h3 mb-3 font-weight-normal">Registrese, por favor</h1>
             <label for="email" class="sr-only">Email address</label>

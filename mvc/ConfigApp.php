@@ -19,9 +19,9 @@ class ConfigApp{
         'insertCategory' => 'category/categoryController#insertCategory',
         'deleteCategory' => 'category/categoryController#deleteCategory',
         'login' => 'user/userController#login',
-        'registrarse' => 'user/userController#registrarse',
-        'registro' => 'user/userController#registro',
-        'ingresar' => 'user/userController#ingresar',
+        'sing_in' => 'user/userController#sing_in',
+        'registry' => 'user/userController#registry',
+        'enter' => 'user/userController#enter',
         'logout' => 'user/userController#logout'
     ];
 }
