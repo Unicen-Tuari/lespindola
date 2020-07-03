@@ -6,23 +6,23 @@ class ConfigApp{
     public static $ACTION = "action";
     public static $PARAMS = "params";
     public static $ACTIONS = [
-        '' => 'productController#products',
-        'home' => 'productController#products',
-        'insert' => 'productController#insertProducts',
-        'delete' => 'productController#deleteProduct',
-        'done' => 'productController#complete',
-        'categories' => 'productController#viewCategories',
-        'homePage' => 'productController#VentaDeHardware',
-        'sale' => 'productController#viewSale',
-        'index' => 'productController#VentaDeHardware',
-        'category' => 'productController#viewProducts',
-        'insertCategory' => 'productController#insertCategory',
-        'deleteCategory' => 'productController#deleteCategory',
-        'login' => 'userController#login',
-        'registrarse' => 'userController#registrarse',
-        'registro' => 'userController#registro',
-        'ingresar' => 'userController#ingresar',
-        'logout' => 'userController#logout'
+        '' => 'product/productController#products',
+        'home' => 'product/productController#products',
+        'insert' => 'product/productController#insertProducts',
+        'delete' => 'product/productController#deleteProduct',
+        'done' => 'product/productController#complete',
+        'categories' => 'category/categoryController#viewCategories',
+        'homePage' => 'product/productController#VentaDeHardware',
+        'sale' => 'product/productController#viewSale',
+        'index' => 'product/productController#VentaDeHardware',
+        'category' => 'product/productController#viewProducts',
+        'insertCategory' => 'category/categoryController#insertCategory',
+        'deleteCategory' => 'category/categoryController#deleteCategory',
+        'login' => 'user/userController#login',
+        'registrarse' => 'user/userController#registrarse',
+        'registro' => 'user/userController#registro',
+        'ingresar' => 'user/userController#ingresar',
+        'logout' => 'user/userController#logout'
     ];
 }
 ?>

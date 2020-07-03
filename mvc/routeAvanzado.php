@@ -1,11 +1,14 @@
 <?php
 require_once "ConfigApp.php";
-require_once "productView.php";
-require_once "productModel.php";
-require_once "productController.php";
-require_once "userController.php";
-require_once "userModel.php";
-require_once "userView.php";
+require_once "product/productView.php";
+require_once "product/productModel.php";
+require_once "product/productController.php";
+require_once "user/userController.php";
+require_once "user/userModel.php";
+require_once "user/userView.php";
+require_once "category/categoryController.php";
+require_once "category/categoryModel.php";
+require_once "category/categoryView.php";
 
 
 function parceURL($url){
@@ -25,8 +28,8 @@ $actionName = $urlData[ConfigApp::$ACTION];
 
 if(array_key_exists($actionName, ConfigApp::$ACTIONS)){
     $params = $urlData[ConfigApp::$PARAMS];
-
-    $controllerMetodo = explode('#', ConfigApp::$ACTIONS[$actionName]);
+    $controller_metodos = explode ('/', ConfigApp::$ACTIONS[$actionName]);
+    $controllerMetodo = explode('#', $controller_metodos[1]);
     $controller = new $controllerMetodo[0];
     $methodName = $controllerMetodo[1];
     

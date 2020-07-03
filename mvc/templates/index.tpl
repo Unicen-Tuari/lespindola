@@ -33,7 +33,7 @@
               <th>Product</th>
               <th>Category</th>
               <th>Description</th>
-              <th>Done</th>
+              <th>Loaded</th>
               <th>Actions</th>
             </tr>
           </thead>
@@ -52,7 +52,11 @@
             {$product['description']}
             </td>
             <td>
-            {$product['done']} 
+            {if $product['done']}
+            <div class="badge badge-primary text-wrap" style="width: 6rem;">
+              Loaded
+            </div>
+            {/if} 
             </td>
             <td>
               <a href="done/{$product['id_product']}"><span data-feather="check-circle"></span></a>

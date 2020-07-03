@@ -2,15 +2,18 @@
 
 require_once "productView.php";
 require_once "productModel.php";
+require_once "category/categoryModel.php";
 
 class productController{
 
     private $view;
     private $model;
+    private $category_model;
 
     function __construct(){
         $this->view = new productView();
         $this->model = new productModel();
+        $this->category_model = new categoryModel();
         session_start();
         if(!isset($_SESSION["nombre"])){ 
                 header("Location: login");
@@ -26,26 +29,20 @@ class productController{
     
       function products($member = null){
         $products = $this->model->getProduct();
-        $categories = $this->model->getCategories();
+        $categories = $this->category_model->getCategories();
         $this->view->products($products, $categories);
-      }
-
-      function viewCategories($member = null){
-        $products = $this->model->getProduct();
-        $categories = $this->model->getCategories();
-        $this->view->viewCategories($products, $categories);
       }
 
       function VentaDeHardware($member = null){
         $products = $this->model->getProduct();
-        $categories = $this->model->getCategories();
+        $categories = $this->category_model->getCategories();
         $this->view->VentaDeHardware($products, $categories);
       }
       
       function viewProducts($params){
-        $products = $this->model->getProductByCategory($params[0]);
-        $category =$this->model-> getCategory($params[0]);
-        $categories = $this->model->getCategories();
+        $products = $this->category_model->getProductByCategory($params[0]);
+        $category =$this->category_model-> getCategory($params[0]);
+        $categories = $this->category_model->getCategories();
         $this->view->viewProducts($products, $categories, $category);
       }
       
@@ -59,19 +56,9 @@ class productController{
         header ("location: home");
       }
       
-      function insertCategory(){
-        $this->model->createCategory($_GET["id_category"], $_GET["name"]); 
-        header ("location: categories");
-      }
-      
       function deleteProduct($params){
         $this->model->removeProduct($params[0]); 
         header ("location: ../home");
-      }
-      
-      function deleteCategory($params){
-        $this->model->removeCategory($params[0]);
-        header ("location: ../categories");
       }
       
       function complete($params){
