@@ -19,7 +19,7 @@ class productController{
                 header("Location: login");
                 die();
               }else{ 
-                if (isset($_SESSION['LAST_ACTIVITY']) && (time() - $_SESSION['LAST_ACTIVITY'] > 1000)) { 
+                if (isset($_SESSION['LAST_ACTIVITY']) && (time() - $_SESSION['LAST_ACTIVITY'] > 10000)) { 
                   header("Location: logout");
                   die();
                 } 

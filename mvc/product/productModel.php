@@ -9,9 +9,11 @@ class productModel{
      }
 
     function getProduct(){
-        $sentence = $this->db->prepare("select * from product"); //select * from product //select c.name, p.* from product p join category c on p.fk_category = c.id_category
+        $sentence = $this->db->prepare("select p.*, c.name name_category
+                                        from product p 
+                                        join category c on (p.fk_category = c.id_category)"); //select * from product //select c.name, p.* from product p join category c on p.fk_category = c.id_category
         $sentence->execute();
-        return $sentence->fetchAll();
+        return $sentence->fetchAll(PDO::FETCH_ASSOC);
     }
     
     function createProduct($title, $category, $description){

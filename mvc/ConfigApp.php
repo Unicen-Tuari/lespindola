@@ -14,7 +14,6 @@ class ConfigApp{
         'categories' => 'category/categoryController#viewCategories',
         'homePage' => 'product/productController#VentaDeHardware',
         'sale' => 'product/productController#viewSale',
-        'index' => 'product/productController#VentaDeHardware',
         'category' => 'product/productController#viewProducts',
         'insertCategory' => 'category/categoryController#insertCategory',
         'deleteCategory' => 'category/categoryController#deleteCategory',

@@ -10,7 +10,7 @@
 </head>
 <body>
     <div>
-        <h1 class="titulo"><a href="index">Venta de Hardware</a></h1>
+        <h1 class="titulo"><a href="homePage">Venta de Hardware</a></h1>
     </div>
 
     <hr>
