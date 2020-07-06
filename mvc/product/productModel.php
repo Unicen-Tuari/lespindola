@@ -30,10 +30,10 @@ class productModel{
         return $sentence->fetch(PDO::FETCH_ASSOC);
     }
 
-    function updateEdit($id_product, $title, $category, $description){
-        $sentence = $this->db->prepare("update product set title = ?, category = ?, description = ?
-                                        where id_product = ?");
-        $sentence->execute(array($id_product, $title, $category, $description));
+    function updateEdit($title, $category, $description, $id_product){
+        $sentence = $this->db->prepare("update product p set p.title = ?, p.fk_category = ?, p.description = ?
+                                        where p.id_product = ?");
+        $sentence->execute(array($title, $category, $description, $id_product));
     }
     
     function removeProduct ($id_product){

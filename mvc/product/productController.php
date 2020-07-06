@@ -63,7 +63,7 @@ class productController{
       }
 
       function editProduct(){
-        $this->model->updateEdit($_GET["id_product"], $_GET["title"], $_GET["category"], $_GET["description"]);
+        $this->model->updateEdit($_GET["title"], $_GET["category"], $_GET["description"], $_GET["id_product"]);
         header ("location: home");
       }
       
