@@ -60,6 +60,7 @@
             </td>
             <td>
               <a href="done/{$product['id_product']}"><span data-feather="check-circle"></span></a>
+              <a href="edit/{$product['id_product']}"><span data-feather="edit"></span></a>
               <a href="delete/{$product['id_product']}"><span data-feather="trash-2"></span></a>
             </td>
           </tbody> 

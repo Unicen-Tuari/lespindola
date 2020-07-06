@@ -20,6 +20,21 @@ class productModel{
         $sentence = $this->db->prepare("INSERT INTO product(title, fk_category, description) VALUES(?, ?, ?)"); 
         $sentence->execute(array($title, $category, $description));
     }
+
+    function fn_editProduct($id_product){
+        $sentence = $this->db->prepare("select p.*, c.name name_category
+                                        from product p 
+                                        join category c on (p.fk_category = c.id_category)
+                                        where p.id_product = ?"); //select * from product //select c.name, p.* from product p join category c on p.fk_category = c.id_category
+        $sentence->execute([$id_product]);
+        return $sentence->fetch(PDO::FETCH_ASSOC);
+    }
+
+    function updateEdit($id_product, $title, $category, $description){
+        $sentence = $this->db->prepare("update product set title = ?, category = ?, description = ?
+                                        where id_product = ?");
+        $sentence->execute(array($id_product, $title, $category, $description));
+    }
     
     function removeProduct ($id_product){
         $sentence = $this->db->prepare("DELETE FROM product WHERE id_product=?"); 

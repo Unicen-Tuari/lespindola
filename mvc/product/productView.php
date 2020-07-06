@@ -33,8 +33,13 @@ class productView {
         $this->smarty->assign('products',$products);
         $this->smarty->display('templates/sale.tpl');
     }
-      
-
+    
+    function editProduct($products, $categories){
+        $this->smarty->assign('products',$products);
+        $this->smarty->assign('categories',$categories);
+        $this->smarty->display('templates/formEditProduct.tpl');
+    }
+    
 }
 
 ?>

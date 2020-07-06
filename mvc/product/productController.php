@@ -19,7 +19,7 @@ class productController{
                 header("Location: login");
                 die();
               }else{ 
-                if (isset($_SESSION['LAST_ACTIVITY']) && (time() - $_SESSION['LAST_ACTIVITY'] > 10000)) { 
+                if (isset($_SESSION['LAST_ACTIVITY']) && (time() - $_SESSION['LAST_ACTIVITY'] > 1000)) { 
                   header("Location: logout");
                   die();
                 } 
@@ -53,6 +53,17 @@ class productController{
 
       function insertProducts(){
         $this->model->createProduct($_GET["title"], $_GET["category"], $_GET["description"]); 
+        header ("location: home");
+      }
+
+      function editProducts($params){
+        $products = $this->model->fn_editProduct($params[0]);
+        $categories = $this->category_model->getCategories();
+        $this->view->editProduct($products, $categories);
+      }
+
+      function editProduct(){
+        $this->model->updateEdit($_GET["id_product"], $_GET["title"], $_GET["category"], $_GET["description"]);
         header ("location: home");
       }
       

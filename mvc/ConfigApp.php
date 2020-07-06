@@ -16,6 +16,8 @@ class ConfigApp{
         'sale' => 'product/productController#viewSale',
         'category' => 'product/productController#viewProducts',
         'insertCategory' => 'category/categoryController#insertCategory',
+        'edit' => 'product/productController#editProducts',
+        'editProduct' => 'product/productController#editProduct',
         'deleteCategory' => 'category/categoryController#deleteCategory',
         'login' => 'user/userController#login',
         'sing_in' => 'user/userController#sing_in',

@@ -16,6 +16,7 @@
 
     <!-- Custom styles for this template -->
     <link href="styles/admin.css" rel="stylesheet">
+    <base href="{BASE_URL}">
   </head>
   
   <body>
