@@ -8,9 +8,6 @@
             <label for="password" class="sr-only">Password</label>
             <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Contraseña" required>
             <button class="btn btn-lg btn-primary btn-block" type="submit">Registrarse</button>
-            <!-- <br>
-            <a href="registrarse"><button class="btn btn-lg btn-primary btn-block">Registrarse</button></a>
-            <p class="mt-5 mb-3 text-muted">&copy; 2017-2020</p> -->
         </form>
     </body>
 </html>

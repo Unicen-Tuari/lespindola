@@ -11,7 +11,7 @@ class productModel{
     function getProduct(){
         $sentence = $this->db->prepare("select p.*, c.name name_category
                                         from product p 
-                                        join category c on (p.fk_category = c.id_category)"); //select * from product //select c.name, p.* from product p join category c on p.fk_category = c.id_category
+                                        join category c on (p.fk_category = c.id_category)"); 
         $sentence->execute();
         return $sentence->fetchAll(PDO::FETCH_ASSOC);
     }
@@ -25,14 +25,14 @@ class productModel{
         $sentence = $this->db->prepare("select p.*, c.name name_category
                                         from product p 
                                         join category c on (p.fk_category = c.id_category)
-                                        where p.id_product = ?"); //select * from product //select c.name, p.* from product p join category c on p.fk_category = c.id_category
+                                        where p.id_product = ?");
         $sentence->execute([$id_product]);
         return $sentence->fetch(PDO::FETCH_ASSOC);
     }
 
     function updateEdit($title, $category, $description, $id_product){
-        $sentence = $this->db->prepare("update product p set p.title = ?, p.fk_category = ?, p.description = ?
-                                        where p.id_product = ?");
+        $sentence = $this->db->prepare("update product set title = ?, fk_category = ?, description = ?
+                                        where id_product = ?");
         $sentence->execute(array($title, $category, $description, $id_product));
     }
     

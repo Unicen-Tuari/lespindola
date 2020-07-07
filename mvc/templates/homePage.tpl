@@ -38,12 +38,4 @@
     </div>
     {/foreach}
 {include file="footerProduct.tpl"}
-    <!-- <div class="contactos">
-        <h4>Para consultas, no dudes en comunicarte</h4>
-        <a href="https://www.facebook.com/LucaasEspindola"><img src="../images/contact/facebook.jpg"></a>
-        <a href="https://www.instagram.com/lucas.espindola01/?hl=es-la"><img src="../images/contact/instagram.png"></a>
-        <a href="https://twitter.com/EspindolaLucas1"><img src="../images/contact/twitter.png"></a>
-    </div>
-    <script src="../javascript/random.js"></script>
-</body>
-</html> -->
+ 
