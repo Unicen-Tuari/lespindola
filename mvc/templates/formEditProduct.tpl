@@ -3,6 +3,7 @@
     <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
       <form action="editProduct" method="GET">
         <input type="hidden" id="id_product" name="id_product" value="{{$products['id_product']}}">
+        <!-- <input type="hidden" id="fk_category" name="fk_category" value="{$products['fk_category']}"> -->
         <h1>Edit Product</h1>
           <div class="form-group">
             <label>Name Product</label>
@@ -12,7 +13,11 @@
             <label>Category</label>
             <select id="category" name="category">
               {foreach from=$categories item=category}
-              <option value="{{$category['id_category']}}">{{$category['name']}}</option>
+              <option value="{{$category['id_category']}}"
+                {if $category['id_category'] eq $products['fk_category']}
+                    selected
+                {/if}
+              >{{$category['name']}}</option>
               {/foreach}
             </select>
           </div>
